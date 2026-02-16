@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datadrift"
+version = "0.1.0"
+description = "Speedrift-suite schema/migration drift checker for Workgraph"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+datadrift = "datadrift.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["datadrift*"]
+
